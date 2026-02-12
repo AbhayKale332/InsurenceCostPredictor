@@ -13,8 +13,8 @@ st.markdown("""
 
 
 # Load model
-model = pickle.load(open("insurance_model.pkl", "rb"))
-model_columns = pickle.load(open("model_columns.pkl", "rb"))
+model = pickle.load(open("./TrainedModels/insurance_model.pkl", "rb"))
+model_columns = pickle.load(open("./TrainedModels/model_columns.pkl", "rb"))
 
 st.title("Akash's Insurance Cost Predictor")
 

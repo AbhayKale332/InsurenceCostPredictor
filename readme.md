@@ -1,5 +1,8 @@
 # Insurance Price Predictor — Linear Regression (beginner project) 🚑💡
 
+## 🌐 Live Deployment
+🔗 https://insurancecostpredictorby.akashchaudhari.in
+
 **Short overview**
 
 This project shows a complete, beginner-friendly workflow for predicting insurance charges using a Linear Regression model. The `InsurenceHypothesis.ipynb` notebook explains each step slowly: EDA, preprocessing (encoding + log transform), model training, evaluation, and model saving.

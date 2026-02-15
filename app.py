@@ -4,6 +4,8 @@ import pandas as pd
 import pickle
 import time
 
+version = "1.0"
+
 # 1. Page Configuration (Must be first)
 st.set_page_config(
     page_title="Insurance Predictor",
@@ -17,7 +19,7 @@ with st.sidebar:
     st.markdown("This tool predicts insurance costs based on personal health data.")
     st.markdown("---")
     st.markdown("""
-    <a href="https://github.com/yourusername/your-repo-name" target="_blank">
+    <a href="https://github.com/akashch1512/InsurenceCostPredictor" target="_blank">
         <button style="
             background-color:#24292e;
             color:white;
@@ -38,8 +40,8 @@ with st.sidebar:
 @st.cache_resource
 def load_model():
     try:
-        model = pickle.load(open("./TrainedModels/insurance_model.pkl", "rb"))
-        cols = pickle.load(open("./TrainedModels/model_columns.pkl", "rb"))
+        model = pickle.load(open(f"./TrainedModels/v{version}/insurance_model.pkl", "rb"))
+        cols = pickle.load(open(f"./TrainedModels/v{version}/model_columns.pkl", "rb"))
         return model, cols
     except FileNotFoundError:
         st.error("Model files not found. Please ensure the 'TrainedModels' folder exists.")

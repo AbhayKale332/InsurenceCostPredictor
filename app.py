@@ -78,7 +78,6 @@ if st.button("Calculate Premium", type="primary", use_container_width=True):
     if model:
         with st.spinner("Analyzing profile..."):
             # Simulate a brief delay for UX (optional, remove in production if unwanted)
-            time.sleep(0.5)
 
             # Create dataframe with zeros
             input_data = pd.DataFrame(columns=model_columns)
